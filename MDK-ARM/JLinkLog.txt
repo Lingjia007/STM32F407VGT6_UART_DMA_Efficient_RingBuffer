@@ -1,0 +1,24 @@
+T36A4 003:189.740   SEGGER J-Link V8.52 Log File
+T36A4 003:189.846   DLL Compiled: Jul 16 2025 12:00:22
+T36A4 003:189.857   Logging started @ 2025-10-17 06:09
+T36A4 003:189.868   Process: C:\Keil_v5\UV4\UV4.exe
+T36A4 003:189.886 - 3189.877ms 
+T36A4 003:189.905 JLINK_SetWarnOutHandler(...)
+T36A4 003:189.915 - 0.012ms 
+T36A4 003:189.929 JLINK_OpenEx(...)
+T36A4 003:191.212   
+  ***** Error: 
+T36A4 003:191.247   Cannot connect to J-Link.
+T36A4 003:191.375 - 1.446ms returns "Cannot connect to J-Link."
+T36A4 003:191.598 
+  ***** Warning: 
+T36A4 003:191.623 API Error: API JLINK_GetHardwareVersion function called before JLINKARM_Open()
+T36A4 003:191.640 JLINK_GetHardwareVersion()
+T36A4 003:192.826   
+  ***** Error: 
+T36A4 003:193.188   Cannot connect to J-Link.
+T36A4 003:193.267 - 1.626ms 
+T36A4 005:392.485 JLINK_Close()
+T36A4 005:392.681 - 0.195ms
+T36A4 005:392.697   
+T36A4 005:392.701   Closed
