@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;..\Middlewares\lwrb\src\include\lwrb</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;../Middleware/lwrb/src/include/lwrb</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -512,12 +512,12 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>Middlewares</GroupName>
+          <GroupName>Middleware</GroupName>
           <Files>
             <File>
               <FileName>lwrb.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Middlewares\lwrb\src\lwrb\lwrb.c</FilePath>
+              <FilePath>..\Middleware\lwrb\src\lwrb\lwrb.c</FilePath>
             </File>
           </Files>
         </Group>

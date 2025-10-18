@@ -13,7 +13,7 @@
                 "Drivers/STM32F4xx_HAL_Driver/Inc/Legacy",
                 "Drivers/CMSIS/Device/ST/STM32F4xx/Include",
                 "Drivers/CMSIS/Include",
-                "Middlewares/lwrb/src/include/lwrb"
+                "Middleware/lwrb/src/include/lwrb"
             ],
             "defines": [
                 "USE_HAL_DRIVER",

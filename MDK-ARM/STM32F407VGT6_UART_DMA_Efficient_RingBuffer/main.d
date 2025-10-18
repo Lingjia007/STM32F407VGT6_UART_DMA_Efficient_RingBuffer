@@ -31,4 +31,7 @@ stm32f407vgt6_uart_dma_efficient_ringbuffer\main.o: ../Drivers/STM32F4xx_HAL_Dri
 stm32f407vgt6_uart_dma_efficient_ringbuffer\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 stm32f407vgt6_uart_dma_efficient_ringbuffer\main.o: ../Core/Inc/dma.h
 stm32f407vgt6_uart_dma_efficient_ringbuffer\main.o: ../Core/Inc/usart.h
+stm32f407vgt6_uart_dma_efficient_ringbuffer\main.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdio.h
 stm32f407vgt6_uart_dma_efficient_ringbuffer\main.o: ../Core/Inc/gpio.h
+stm32f407vgt6_uart_dma_efficient_ringbuffer\main.o: ../Middleware/lwrb/src/include/lwrb/lwrb.h
+stm32f407vgt6_uart_dma_efficient_ringbuffer\main.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h

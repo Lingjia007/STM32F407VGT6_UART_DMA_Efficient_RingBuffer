@@ -1,27 +1,48 @@
 /* USER CODE BEGIN Header */
 /**
-  ******************************************************************************
-  * @file    usart.c
-  * @brief   This file provides code for the configuration
-  *          of the USART instances.
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2025 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file    usart.c
+ * @brief   This file provides code for the configuration
+ *          of the USART instances.
+ ******************************************************************************
+ * @attention
+ *
+ * Copyright (c) 2025 STMicroelectronics.
+ * All rights reserved.
+ *
+ * This software is licensed under terms that can be found in the LICENSE file
+ * in the root directory of this software component.
+ * If no LICENSE file comes with this software, it is provided AS-IS.
+ *
+ ******************************************************************************
+ */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "usart.h"
 
 /* USER CODE BEGIN 0 */
+#if 1
+struct __FILE
+{
+  int handle;
+};
 
+FILE __stdout;
+/* Avoid semihosting */
+void _sys_exit(int x)
+{
+  x = x;
+}
+/* Redirect printf to USART */
+int fputc(int ch, FILE *f)
+{
+  while ((USART1->SR & 0X40) == 0)
+    ;
+  USART1->DR = (uint8_t)ch;
+
+  return ch;
+}
+#endif
 /* USER CODE END 0 */
 
 UART_HandleTypeDef huart1;
